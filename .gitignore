@@ -1,0 +1,38 @@
+# 编译输出目录
+/target/
+
+# 日志文件
+*.log
+
+# 依赖下载目录
+/.mvn/
+mvnw
+mvnw.cmd
+/.idea/
+.idea_modules/
+*.iml
+
+# IntelliJ IDEA 配置文件
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Eclipse 配置文件
+.project
+.classpath
+.settings
+
+# VSCode 配置文件
+.vscode
+
+# 临时文件
+*.swp
+*.swo
+*.tmp
+
+# 数据库文件
+*.h2.db
+
+# 本地配置文件
+local.*

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Login...</title>
+</head>
+<body onload="document.forms[0].submit()">
+<noscript>
+    <p><strong>Note:</strong> Since your browser does not support JavaScript, you must press the button below once to proceed.</p>
+</noscript>
+<form method="post" th:action="${action}">
+    <input type="hidden" name="SAMLResponse" th:value="${value}"/><br/>
+    <noscript><input type="submit" value="Submit" /></noscript>
+</form>
+</body>
+</html>

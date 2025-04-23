@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>idaas-lite</artifactId>
+        <groupId>com.zbycorp</groupId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>user-module</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>user-api</module>
+        <module>user-adapter</module>
+        <module>user-application</module>
+        <module>user-domain</module>
+        <module>user-infrastructure</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <user-api.version>${revision}</user-api.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zbycorp</groupId>
+            <artifactId>security</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zbycorp</groupId>
+            <artifactId>exception</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.zbycorp</groupId>
+            <artifactId>common</artifactId>
+            <version>${revision}</version>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.zbycorp</groupId>
+                <artifactId>user-api</artifactId>
+                <version>${user-api.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+</project>
