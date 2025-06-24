@@ -5,4 +5,5 @@ package com.zbycorp.user.domain.user;
  * @date 2025-04-09 16:39
  **/
 public class User {
+
 }
